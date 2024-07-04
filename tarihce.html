@@ -4,86 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hastane Tarihçesi</title>
+    <title>Tarihçe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Personel</button>
-                <div class="dropdown-content">
-                    <a href="#">Birimler</a>
-                    <a href="#">Yemek Listesi</a>
-                    <a href="#">Tıbbi Birimler</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Doktorlarımız</button>
-                <div class="dropdown-content">
-                    <a href="#">Dahili Tıp Bölümleri</a>
-                    <a href="#">Cerrahi Tıp Bölümleri</a>
-                    <a href="#">Temel Tıp Bölümleri</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Randevu</button>
-                <div class="dropdown-content">
-                    <a href="#">Online Randevu Sistemi</a>
-                    <a href="#">Telefonla Randevu Sistemi</a>
-                    <a href="#">MHRS'den Randevu Sistemi</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Hizmetler</button>
-                <div class="dropdown-content">
-                    <a href="#">Acil Servis</a>
-                    <a href="#">Ameliyathane</a>
-                    <a href="#">Laboratuvar</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Hakkımızda</button>
-                <div class="dropdown-content">
-                    <a href="tarihce.html">Tarihçe</a>
-                    <a href="#">Misyon & Vizyon</a>
-                    <a href="#">Değerlerimiz</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">İletişim</button>
-                <div class="dropdown-content">
-                    <a href="#">İletişim Bilgileri</a>
-                    <a href="#">Ulaşım</a>
-                    <a href="#">Geri Bildirim</a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">YDA Hastanesi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="personelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Personel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="personelDropdown">
+                            <li><a class="dropdown-item" href="#">Birimler</a></li>
+                            <li><a class="dropdown-item" href="#">Yemek Listesi</a></li>
+                            <li><a class="dropdown-item" href="#">Tıbbi Birimler</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="doktorlarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Doktorlarımız
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="doktorlarDropdown">
+                            <li><a class="dropdown-item" href="dis_hekimligi.html">Diş Hekimliği</a></li>
+                            <li><a class="dropdown-item" href="cerrahi_tip.html">Cerrahi Tıp Bölümleri</a></li>
+                            <li><a class="dropdown-item" href="temel_tip.html">Temel Tıp Bölümleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="randevuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Randevu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="randevuDropdown">
+                            <li><a class="dropdown-item" href="online_randevu.html">Online Randevu Sistemi</a></li>
+                            <li><a class="dropdown-item" href="#">Telefonla Randevu Sistemi</a></li>
+                            <li><a class="dropdown-item" href="https://www.mhrs.gov.tr">MHRS'den Randevu Sistemi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hizmetler
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
+                            <li><a class="dropdown-item" href="#">Acil Servis</a></li>
+                            <li><a class="dropdown-item" href="#">Ameliyathane</a></li>
+                            <li><a class="dropdown-item" href="#">Laboratuvar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hakkimizdaDropdown">
+                            <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                            <li><a class="dropdown-item" href="#">Misyon & Vizyon</a></li>
+                            <li><a class="dropdown-item" href="#">Değerlerimiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="iletisimDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            İletişim
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="iletisimDropdown">
+                            <li><a class="dropdown-item" href="iletisim.html">İletişim Bilgileri</a></li>
+                            <li><a class="dropdown-item" href="#">Ulaşım</a></li>
+                            <li><a class="dropdown-item" href="geri_bildirim.html">Geri Bildirim</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="main-content content">
-            <h1 style="color: darkblue; margin-top: 100px; font-size: 35px;">YDA HASTANESİ TARİHÇESİ</h1>
-            <p style="text-align: left; padding: 0 20px;">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quae, cum suscipit exercitationem
-                architecto, odio eos corporis tenetur ipsa id quam modi totam facere. Dolorum voluptas repudiandae iste,
-                qui provident sapiente blanditiis possimus aperiam et commodi modi, voluptatum expedita, corrupti
-                aspernatur error distinctio. Tempore aperiam possimus nobis labore? Blanditiis sunt debitis rem iusto
-                provident et corrupti quasi impedit officia distinctio.
-            </p>
-        </div>
+    <div class="main-content content">
+        <h1 style="color: darkblue; margin-top: 100px; font-size: 35px;">YDA HASTANESİ TARİHÇESİ</h1>
+        <p style="text-align: left; padding: 0 20px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tellus pulvinar, laoreet diam
+            non, tempus mi. Nam ultrices ligula id ex porttitor posuere. Morbi tincidunt neque a libero lacinia
+            iaculis. Fusce non ex libero. Cras posuere, ligula id pharetra condimentum, turpis est congue purus, et
+            finibus lorem nisl nec leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Suspendisse potenti. Ut vestibulum elit vel ipsum tempor, eget elementum justo convallis.
+            Quisque non eros vel nisi pretium fermentum vel at enim. Morbi nec velit in metus ullamcorper aliquet
+            eget ut ligula. Vivamus vestibulum interdum lacus, sit amet iaculis metus. Sed in fringilla nulla.
+            Vestibulum scelerisque, magna a sodales finibus, eros sapien iaculis ligula, nec dictum nisi libero sit
+            amet felis. Integer vel est magna. Integer laoreet magna vitae odio eleifend iaculis. Morbi eleifend
+            felis metus, vitae dictum nisi ultricies non. Donec eleifend tincidunt lectus at sagittis. Vestibulum
+            eleifend ex odio, non consequat neque egestas et. Nulla feugiat ligula eget nisi lacinia, quis tempus
+            lacus aliquam. Duis euismod risus quis ante vehicula, a gravida tellus laoreet. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut rhoncus ipsum et mauris aliquet
+            lobortis. Aenean rutrum sodales feugiat. Etiam interdum posuere velit, id ullamcorper ex aliquet id.
+            Pellentesque nec mi euismod, rutrum neque a, ullamcorper sem. Duis feugiat, magna a vehicula pretium,
+            tortor nisi semper nisi, vel volutpat tortor ante ac lectus. Suspendisse tincidunt sapien ac bibendum
+            eleifend. Nulla facilisi. Donec vitae tristique libero. Duis nec auctor magna. Nullam tristique maximus
+            sem, nec auctor dui fringilla id. Suspendisse potenti. Cras tristique, libero ut eleifend tempor, eros
+            mi molestie ligula, vel convallis sapien orci id ipsum. Nulla facilisi. Suspendisse at viverra velit,
+            quis tempus justo. Cras eu magna id libero consectetur malesuada in ut ligula. Etiam elementum
+            vestibulum enim, eu varius enim. Sed ac eros sit amet turpis malesuada convallis. Quisque mollis, nunc
+            sed auctor viverra, odio mi placerat eros, ac ultricies est neque sit amet turpis. Duis at tortor
+            condimentum, ullamcorper erat et, consequat orci. Duis mollis scelerisque lectus, id faucibus leo
+            vestibulum vel. Cras sodales maximus magna, at vestibulum nunc tincidunt sed. Morbi sodales, lorem nec
+            auctor convallis, nisl dui lacinia nunc, vitae gravida libero tortor eu odio. Fusce ac magna ultricies,
+            consequat sem at, rutrum purus. Morbi id fermentum quam. Nulla sed viverra ex. Suspendisse efficitur
+            leo eu ex interdum, nec consequat tortor varius. Aliquam in posuere felis. Ut in orci ullamcorper,
+            egestas risus vel, fermentum enim. Curabitur pretium in neque nec auctor. Phasellus sed nisi ligula.
+            Nulla aliquam mauris sed felis efficitur suscipit. Sed nec risus vitae erat ultricies laoreet. Mauris
+            sed bibendum mi. Donec laoreet, quam non finibus posuere, lorem velit iaculis nulla, vitae facilisis
+            felis ex quis neque. Suspendisse potenti. Fusce dapibus est eu urna efficitur, at tincidunt velit
+            pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Nulla facilisi. Nullam pretium vehicula nisi, id laoreet dui interdum non. Sed malesuada nisi
+            et arcu tempor fermentum. Duis sit amet mauris at eros auctor hendrerit. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse aliquam lacinia
+            hendrerit. In eu eros dolor. Cras a nisl lacinia, consequat tortor non, ultrices nulla. Vestibulum ante
+            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec gravida leo non lorem
+            iaculis eleifend. Proin at fringilla sapien. Ut tincidunt elit non enim euismod, sit amet congue nisl
+            dapibus. Nullam eget ipsum ac est accumsan ultricies. Pellentesque quis sapien fermentum, accumsan
+            ligula nec, maximus lorem. Donec fringilla nunc ligula,</p>
 
-        <div class="footer">
-            <h2 style="color: darkblue;">İletişim</h2>
+
+         <div class="footer bg-light p-4 mt-4 text-center border rounded">
+            <h2 class="text-primary">İletişim</h2>
             <p>Adres: YDA center Çankaya/Ankara</p>
             <p>Telefon: *********************</p>
             <p>E-posta: info@hastane.com</p>
-        </div>
-    </div>
+        </div> 
+    
 </body>
 
 </html>
