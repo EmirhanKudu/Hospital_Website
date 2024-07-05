@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="index.html">YDA Hastanesi</a>
+            <a class="navbar-brand fw-bold" href="index.html">YDA HASTANESİ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,12 +34,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="personelDropdown">
                             <li><a class="dropdown-item" href="#">Birimler</a></li>
-                            <li><a class="dropdown-item" href="#">Yemek Listesi</a></li>
+                            <li><a class="dropdown-item" href="yemek_listesi.html">Yemek Listesi</a></li>
                             <li><a class="dropdown-item" href="#">Tıbbi Birimler</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="doktorlarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="doktorlarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Doktorlarımız
                         </a>
@@ -66,7 +66,7 @@
                             Hizmetler
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
-                            <li><a class="dropdown-item" href="#">Acil Servis</a></li>
+                            <li><a class="dropdown-item" href="acil_servis.html">Acil Servis</a></li>
                             <li><a class="dropdown-item" href="#">Ameliyathane</a></li>
                             <li><a class="dropdown-item" href="#">Laboratuvar</a></li>
                         </ul>
@@ -89,7 +89,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="iletisimDropdown">
                             <li><a class="dropdown-item" href="iletisim.html">İletişim Bilgileri</a></li>
-                            <li><a class="dropdown-item" href="#">Ulaşım</a></li>
+                            <li><a class="dropdown-item" href="ulasim.html">Ulaşım</a></li>
                             <li><a class="dropdown-item" href="geri_bildirim.html">Geri Bildirim</a></li>
                         </ul>
                     </li>
@@ -102,7 +102,7 @@
 
     <div class="container">
         <div class="main-content content">
-            <h1 style="color: darkblue; margin-top: 100px; font-size: 35px;">Geri Bildirim</h1>
+            <h1 style=" margin-top: 100px; font-size: 35px;" class="fw-bold text-primary">Geri Bildirim</h1>
             <form id="feedbackForm">
                 <label for="name">İsim:</label>
                 <input type="text" id="name" name="name" required>
@@ -113,7 +113,7 @@
                 <label for="feedback">Geri Bildirim:</label>
                 <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
                 <br><br>
-                <button type="submit">Gönder</button>
+                <button type="submit" class="btn" style="background-color: green; color: white; width: 30%; border-radius: 30px;">Gönder</button>
             </form>
             <div id="message" style="display:none; margin-top:20px;"></div>
         </div>
