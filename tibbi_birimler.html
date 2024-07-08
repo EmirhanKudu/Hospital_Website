@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tıbbi Birimler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">YDA HASTANESİ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="personelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Personel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="personelDropdown">
+                            <li><a class="dropdown-item" href="birimler.html">Birimler</a></li>
+                            <li><a class="dropdown-item" href="yemek_listesi.html">Yemek Listesi</a></li>
+                            <li><a class="dropdown-item" href="#">Tıbbi Birimler</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="doktorlarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Doktorlarımız
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="doktorlarDropdown">
+                            <li><a class="dropdown-item" href="dis_hekimligi.html">Diş Hekimliği</a></li>
+                            <li><a class="dropdown-item" href="cerrahi_tip.html">Cerrahi Tıp Bölümleri</a></li>
+                            <li><a class="dropdown-item" href="temel_tip.html">Temel Tıp Bölümleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="randevuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Randevu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="randevuDropdown">
+                            <li><a class="dropdown-item" href="online_randevu.html">Online Randevu Sistemi</a></li>
+                            <li><a class="dropdown-item" href="telefon_randevu.html">Telefonla Randevu Sistemi</a></li>
+                            <li><a class="dropdown-item" href="https://www.mhrs.gov.tr">MHRS'den Randevu Sistemi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hizmetler
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
+                            <li><a class="dropdown-item" href="acil_servis.html">Acil Servis</a></li>
+                            <li><a class="dropdown-item" href="ameliyathane.html">Ameliyathane</a></li>
+                            <li><a class="dropdown-item" href="#">Laboratuvar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hakkimizdaDropdown">
+                            <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                            <li><a class="dropdown-item" href="misyon_vizyon.html">Misyon & Vizyon</a></li>
+                            <li><a class="dropdown-item" href="degerlerimiz.html">Değerlerimiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="iletisimDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            İletişim
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="iletisimDropdown">
+                            <li><a class="dropdown-item" href="iletisim.html">İletişim Bilgileri</a></li>
+                            <li><a class="dropdown-item" href="ulasim.html">Ulaşım</a></li>
+                            <li><a class="dropdown-item" href="geri_bildirim.html">Geri Bildirim</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content fw-bold">Tıbbi Birimlerimiz
+    </div>
+    <main class="alfList">
+        <article>
+            <section class="part alfList">
+                <ul class="alfList core">
+                    <li><a href="#blm1" title="a">A</a></li>
+                    <li><a href="#blm2" title="a">B</a></li>
+                    <li><a href="#blm3" title="a">C</a></li>
+                    <li><a href="#blm4" title="a">Ç</a></li>
+                    <li><a href="#blm5" title="a">D</a></li>
+                    <li><a href="#blm6" title="a">E</a></li>
+                    <li><a href="#blm7" title="a">F</a></li>
+                    <li><a href="#blm8" title="a">G</a></li>
+                    <li><a href="#blm9" title="a">Ğ</a></li>
+                    <li><a href="#blm10" title="a">H</a></li>
+                    <li><a href="#blm11" title="a">I</a></li>
+                    <li><a href="#blm12" title="a">İ</a></li>
+                    <li><a href="#blm13" title="a">J</a></li>
+                    <li><a href="#blm14" title="a">K</a></li>
+                    <li><a href="#blm15" title="a">L</a></li>
+                    <li><a href="#blm16" title="a">M</a></li>
+                    <li><a href="#blm17" title="a">N</a></li>
+                    <li><a href="#blm18" title="a">O</a></li>
+                    <li><a href="#blm19" title="a">Ö</a></li>
+                    <li><a href="#blm20" title="a">P</a></li>
+                    <li><a href="#blm21" title="a">R</a></li>
+                    <li><a href="#blm22" title="a">S</a></li>
+                    <li><a href="#blm23" title="a">Ş</a></li>
+                    <li><a href="#blm24" title="a">T</a></li>
+                    <li><a href="#blm25" title="a">Y</a></li>
+                    <li><a href="#blm26" title="a">U</a></li>
+                    <li><a href="#blm27" title="a">Ü</a></li>
+                    <li><a href="#blm28" title="a">V</a></li>
+                    <li><a href="#blm29" title="a">Y</a></li>
+                    <li><a href="#blm30" title="a">Z</a></li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm1" data-letter="a">A
+                    <li>Ayak ve Bilek Sağlığı</li>
+                    <li>Acil Servis</li>
+                    <li>Ağrı Tedavisi</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm2" data-letter="a">B
+                    <li>Beslenme ve Diyet</li>
+                    <li>Baş Boyun Cerrahisi</li>
+                    <li>Beyin ve Sinir Cerrahisi</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm3" data-letter="a">C
+                    <li>Check Up</li>
+                
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm4" data-letter="a">Ç
+                    <li>Çocuk Hastalıkları</li>
+                    <li>Çocuk ve Ergen Ruh Sağlığı</li>
+                    <li>Çocuk Yoğun Bakım</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm5" data-letter="a">D
+                    <li>Deri Hastalıkları</li>
+                    <li>Dil ve Konuşma Terapisi</li>
+                    <li>Diyabet Tedavisi</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm6" data-letter="a">E
+                    <li>El Cerrahisi</li>
+                    <li>Endoskopi</li>
+                    <li>Endokrinoloji</li>
+                    <li>Enfeksiyon Hastalıkları</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm7" data-letter="a">F
+                    <li>Fizik Tedavi</li>
+                    <li>Fonksiyonel Tıp</li>
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm8" data-letter="a">G
+                    <li>Göğüs Cerrahisi</li>
+                    <li>Girişimsel Radyoloji</li>
+                    <li>Göz Hastalıkları</li>
+                    <li>Genel Cerrahi</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm10" data-letter="a">H
+                    <li>Hareket Bozuklukları</li>
+                    <li>Hematoloji</li>
+                    <li>Hücresel Tedavi</li>
+                    <li>Hipofiz Hastalıkları</li>
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm13" data-letter="a">J
+                    <li>Jinekoloji</li>
+                    
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm14" data-letter="a">K
+                    <li>Kadın Doğum</li>
+                    <li>Kalp Sağlığı</li>
+                    <li>Kulak Burun Boğaz</li>
+                    <li>Klinik Labaratuvar</li>
+                    <li>Kardiyoloji</li>
+                    <li>Kas-Sinir Hastalıkları</li>
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm15" data-letter="a">L
+                    <li>Lenf Hastalıkları</li>
+                   
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm16" data-letter="a">M
+                    <li>Meme Sağlığı</li>
+                    <li>Migren Tedavisi</li>
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm17" data-letter="a">N
+                    <li>Nöroloji</li>
+                    <li>Nükleer Tıp</li>
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm18" data-letter="a">O
+                    <li>Obezite Cerrahisi</li>
+                    <li>Onkolojik Cerrahi</li>
+                    
+                </ul>
+                <strong class="letterHead"></strong>
+                <ul id="blm20" data-letter="a">P
+                    <li>Pedodonti</li>
+                    <li>Psikiyatri</li>
+
+                    
+                </ul>
+              
+            </section>
+        </article>
+    </main>
+
+    <div class="footer bg-light p-4 mt-4 text-center border rounded">
+        <h2 class="text-primary">İletişim</h2>
+        <p>Adres: YDA center Çankaya/Ankara</p>
+        <p>Telefon: *********************</p>
+        <p>E-posta: info@hastane.com</p>
+    </div> 
+</body>
+
+</html>
