@@ -12,6 +12,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+    transition: 0.7s ease;
 }
 
 .navbar a {
@@ -260,5 +261,74 @@ form button:hover {
 }
 .ameliyatresm {border-radius: 50px;
 }
+.alfList.core {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.alfList.core li {
+    margin: 10px;
+}
+
+.alfList.core a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.alfList.core a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.letterHead {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #0056b3;
+    
+
+
+.alfList section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.alfList section ul li {
+    padding: 5px 0;
+    margin-left: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
