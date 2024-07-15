@@ -310,10 +310,23 @@ form button:hover {
 .fa-solid.fa-house {
     color: #007bff;
 }
+#calisanGirisi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
+#calisanGirisi .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
-
-
+#calisanGirisi .btn:hover {
+    background-color: darkblue;
+}
 
 
 
