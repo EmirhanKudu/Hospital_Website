@@ -327,11 +327,32 @@ form button:hover {
 #calisanGirisi .btn:hover {
     background-color: darkblue;
 }
+#send {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+}
 
-
-
-
-
+#send:hover {
+    background-color: green;
+}
+#bend {
+    background-color: green;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+}
+#bend.container{
+    text-align: center;
+}
 
 
 
